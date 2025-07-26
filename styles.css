@@ -1,0 +1,147 @@
+body {
+    background-color: rgba(0, 0, 0, 0.93); /* negro con transparencia correcta */
+    margin: auto;
+    font-family: sans-serif;
+    color: #fff;
+    width: 90%;
+    min-height: 100vh; /* para que cubra toda la pantalla */
+    box-sizing: border-box;
+    letter-spacing: 2px;
+    padding: 20px 0;
+}
+
+form {
+    font-size: 16px;
+}
+
+
+.box {
+    position: relative;  /* para que .opaco se posicione respecto a .box */
+    min-height: 600px;   /* altura mínima para que tenga espacio */
+    margin: 10px auto 0 auto;
+    background: url("https://media.istockphoto.com/id/618630648/es/foto/queso-casero-smash-burger.jpg?s=612x612&w=0&k=20&c=53Er95KeiLsDc9PvxhCTuaNjCTA13ZB6LzCTy475KY0=") center / cover fixed #4f9;
+    box-shadow: 0px 0px 50px #fff5;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.opaco {
+  position: absolute;  /* posición absoluta para cubrir todo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.66);
+    border-radius: 5px;
+    z-index: 1;  /* para estar debajo del texto */
+}
+h1 {
+    font-family: sans-serif;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    font-size: 4em;
+    text-align: center;
+    font-weight: 100;
+    text-shadow: 0 0 50px #fffaaa;
+}
+
+h2 {
+    margin: 2em auto 0 auto;
+    text-align: center;
+    padding: 40px 0;
+    font-weight: 100;
+    letter-spacing: 5px;
+    font-size: 2em;
+}
+
+li {
+    font-size: 1.3em;
+    margin: 0;
+    font-weight: 100;
+    text-shadow: 0 0 10px #fff;
+    padding: 10px 20px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap; /* para que en móvil se adapte */
+}
+
+
+
+.img {
+    flex: 1 1 400px;
+    min-height: 400px;
+    background: url("https://viejodave.com.ar/wp-content/uploads/2024/02/hamburguesa-sola-carne-01.jpg") center / cover no-repeat #4f9;
+    box-shadow: 0px 0px 50px #fff5;
+    border-radius: 1em;
+    box-sizing: border-box;
+}
+
+h3 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2em;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-top: 5em;
+    text-shadow: 0 0 50px #fff5;
+    letter-spacing: 4px;
+}
+
+.pasos {
+    font-size: 1em;
+    background: url(https://www.tresjotas.com/wp-content/uploads/2018/03/saber-termino-de-la-carne.jpg) center / cover no-repeat;
+    width: 100%;
+    min-height: 400px;
+    margin: 30px auto 0 auto;
+    color: #fff;
+    border-radius: 1em;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.opaco2 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.66);
+    border-radius: 1em;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 30px auto 20px auto;
+}
+
+button {
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #ffcc00;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+.text-align {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+}
+
+img, .img {
+    max-width: 100%;
+    height: auto;
+}

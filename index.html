@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../Receta de Comida/img/iconoH.png" type="image/png">
+    <meta name="description" content="Receta de hamburguesa casera fácil y rápida.">
+    <meta name="keywords" content="hamburguesa, receta, comida, casera">
+    <meta name="author" content="Alexis Botti">
+    <title>Hamburguesa casera</title>
+</head>
+<body>
+    <form>
+        <div class="box">
+            <div class="opaco">
+                <h1>Receta cacera de Hamburguesa</h1>
+            </div>
+        </div>
+        <h2>IGREDIENTES</h2>
+        <div class="contenedor">
+            <ul>
+                <li>
+                    500 g de carne picada
+                </li>
+                <li>
+                    1 huevo
+                </li>
+                <li>
+                    1/2 cebolla picada
+                </li>
+                <li>
+                    Sal y pimienta a gusto
+                </li>
+                <li>
+                    Pan de hamburguesa
+                </li>
+                <li>
+                    Queso
+                </li>
+                <li>
+                    Lechuga
+                </li>
+                <li>
+                    Tomate
+                </li>
+                <li>
+                    Mayonesa, kétchup o mostaza <strong>(opcional)</strong>
+                </li>
+            </ul>
+            <div class="img">
+        </div>
+        </div>
+        <h3>PASOS</h3>
+        <div class="pasos">
+            <div class="opaco2">
+            <ol>
+                <li>Formá las hamburguesas con las manos, del tamaño que prefieras.</li>
+                <li>Cociná las hamburguesas en una sartén caliente o a la parrilla, 3-4 minutos por lado.</li>
+                <li>Calentá los panes para que queden crocantes.</li>
+                <li>Armá la hamburguesa: pan, lechuga, carne, queso, tomate y las salsas que quieras.</li>
+                <li>Tapá con el otro pan y ¡listo!</li>
+                <li>En un bowl, mezclá la carne picada con el huevo, la cebolla picada, sal y pimienta.</li>
+            </ol>
+            </div>
+        </div>
+        <p><strong>⏱ Tiempo estimado:</strong> 20 a 30 minutos</p>
+        <div class="text-align">
+        <button type="button" id="favBtn">⭐ Agregar a favoritos</button>
+            <script>
+            const btn = document.getElementById('favBtn');
+
+    btn.addEventListener('click', () => {
+        btn.style.backgroundColor = '#4CAF50';
+        btn.style.color = 'white';
+        btn.disabled = true;
+        btn.textContent = '⭐ Agregado a favoritos';
+    });
+    </script>
+        </div>
+    </form>
+</body>
+</html>
